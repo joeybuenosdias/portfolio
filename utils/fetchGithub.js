@@ -1,8 +1,10 @@
 const request = require('request');
 
 const fetchGithub = (url) => {
-    console.log('hello')
     request({
+        headers: {
+            'User-Agent': 'mojocodeio'
+        },
         url,
         json: true,
     }, (err, { body }) => {
