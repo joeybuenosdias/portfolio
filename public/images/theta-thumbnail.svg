@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="ThetaLogo" transform="matrix(2.50947,0,0,2.50947,-9.75511,-172.866)">
+        <g transform="matrix(1.28642e-16,-2.10088,1.64464,1.00705e-16,-147.89,416.969)">
+            <rect x="120.062" y="92.585" width="2.816" height="72.147" style="fill:rgb(1,63,167);"/>
+        </g>
+        <path d="M4.379,130.165C29.455,149.685 74.123,150.517 114.914,133.452C86.856,161.53 1.063,148.1 4.379,130.165Z" style="fill:rgb(1,63,167);stroke:rgb(1,63,167);stroke-width:0.4px;"/>
+        <g transform="matrix(1.05584,0,0,1,-6.70486,0)">
+            <rect x="120.062" y="92.585" width="2.816" height="72.147" style="fill:rgb(1,63,167);"/>
+        </g>
+        <g transform="matrix(1.05584,0,0,0.433572,-122.388,93.3092)">
+            <rect x="120.062" y="92.585" width="2.816" height="72.147" style="fill:rgb(1,63,167);"/>
+        </g>
+        <g transform="matrix(1,0,0,1.00391,-6.66134e-15,-0.539706)">
+            <path d="M121.549,92.965C104.79,92.738 96.198,98.21 89.838,103.54C70.3,122.59 58.573,133.93 39.441,138.094C51.778,138.132 62.423,132.605 75.044,121.606C91.429,103.471 106.296,94.481 121.549,96.85L121.549,92.965Z" style="fill:rgb(1,63,167);stroke:rgb(1,63,167);stroke-width:0.4px;"/>
+        </g>
+    </g>
+</svg>

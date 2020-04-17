@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Logo" transform="matrix(1,0,0,1,0.552718,2.83222)">
+        <g id="Red-Section" serif:id="Red Section">
+            <g transform="matrix(1.05664,-1.05664,3.20115,3.20115,-232.663,-38.352)">
+                <rect x="105.281" y="69.5" width="4.015" height="15.288" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(1.05664,1.05664,-3.20115,3.20115,305.944,-265.082)">
+                <rect x="105.281" y="69.5" width="4.015" height="15.288" style="fill:rgb(255,0,0);"/>
+            </g>
+        </g>
+        <g id="Base">
+            <path d="M284.964,186.965L284.952,186.952L284.977,186.952L284.964,186.965ZM298.447,172.376L270.375,172.376L184.918,86.918L198.953,72.882L298.447,172.376Z"/>
+            <path d="M200.594,172.377L172.522,172.377L101.062,100.917L115.098,86.881L200.594,172.377Z"/>
+            <path d="M99.453,172.377L184.936,86.894L198.972,100.93L127.525,172.377L99.453,172.377Z"/>
+            <path d="M1.539,172.377L101.034,72.882L115.07,86.918L29.611,172.377L1.539,172.377Z"/>
+            <g transform="matrix(1,0,0,0.879053,-0.668834,20.8485)">
+                <rect x="30.35" y="154.139" width="48.89" height="18.238"/>
+            </g>
+            <g transform="matrix(0.707107,-0.707107,0.621584,0.621584,-50.0274,86.691)">
+                <rect x="30.35" y="154.139" width="48.89" height="18.238"/>
+            </g>
+            <g transform="matrix(0.707107,0.707107,-0.621584,0.621584,272.692,9.19887)">
+                <rect x="30.35" y="154.139" width="48.89" height="18.238"/>
+            </g>
+            <g transform="matrix(1,0,0,0.879053,191.245,20.8485)">
+                <rect x="30.35" y="154.139" width="48.89" height="18.238"/>
+            </g>
+            <g transform="matrix(1,0,0,0.879053,95.2048,20.8485)">
+                <rect x="30.35" y="154.139" width="48.89" height="18.238"/>
+            </g>
+        </g>
+        <path id="Top-Square" serif:id="Top Square" d="M150,23.93L115.425,58.505L150,93.08L184.575,58.505L150,23.93ZM150.117,47.51L139.005,58.622L149.883,69.5L160.995,58.388L150.117,47.51Z"/>
+        <g transform="matrix(1,0,0,1,16.7922,-35.1124)">
+            <text x="30.496px" y="272.623px" style="font-family:'Copperplate';font-size:91.924px;fill:rgb(35,31,32);">D<tspan x="106.977px 178.403px " y="272.623px 272.623px ">EV</tspan></text>
+        </g>
+    </g>
+</svg>

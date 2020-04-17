@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    align-items: center;
+    background-color: #0a8054;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+header h2 {
+    margin: 0;
+}
+
+.joey-avatar {
+    height: 250px;
+    width: 250px;
+}
+
+.skills-section {
+    padding: 24px 8px;
+}
+
+.skills-title {
+    padding: 0 16px;
+    color: #3F3F3F;
+}
+
+.skills-container {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.skill-card {
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    box-shadow: 4px 2px 4px 0 rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 8px;
+    padding: 16px 16px 0 16px;
+    width: 96px;
+}
+
+.skill-logo {
+    width: 72px;
+    height: 72px;
+    margin: 0 24px;
+}
+
+.skill-label {
+    width: 96px;
+    font-size: 14px;
+    color: gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+/* @media (max-width: 600px) {
+
+} */

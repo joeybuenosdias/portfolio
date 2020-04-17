@@ -1,0 +1,14 @@
+<section class="skills-section">
+    <h2 class="skills-title">Repositories</h2>
+    <div class="skills-container">
+        {{#each repos}}
+            <div class="skill-card">
+                <img
+                    class="skill-logo"
+                    src={{this.vector}}
+                />
+                <p class="skill-label">{{this.label}}</p>
+            </div>
+        {{/each}}
+    </div>
+</section>

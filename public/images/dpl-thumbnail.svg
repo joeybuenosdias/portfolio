@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="bg" transform="matrix(1,0,0,1,-0.668741,6.82999)">
+        <path d="M202.385,61.815L181.356,61.815L245.816,244.217L55.522,244.217L122.879,61.815L101.831,61.815L101.831,42.123L202.385,42.123L202.385,61.815Z" style="fill:white;stroke:rgb(63,0,167);stroke-width:6.25px;"/>
+    </g>
+    <g id="Potion">
+        <g id="Liquid">
+            <path d="M210.141,150C170.169,160.763 146.75,102.074 106.892,112.806L54.853,251.047L245.147,251.047L210.141,150Z" style="fill:rgb(63,0,167);"/>
+        </g>
+        <g id="Bubbles">
+            <g transform="matrix(1.22086,0,0,1.22086,-40.481,-37.1589)">
+                <circle cx="140.907" cy="168.192" r="23.554" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.82918,0,0,0.852749,71.2091,44.8408)">
+                <circle cx="140.907" cy="168.192" r="23.554" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.473973,0,0,0.473973,82.3536,143.791)">
+                <circle cx="140.907" cy="168.192" r="23.554" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-0.668741,6.82999)">
+        <g id="Beaker">
+            <path id="outline" d="M202.385,61.815L181.356,61.815L245.816,244.217L55.522,244.217L122.879,61.815L101.831,61.815L101.831,42.123L202.385,42.123L202.385,61.815Z" style="fill:none;stroke:rgb(63,0,167);stroke-width:6.25px;"/>
+        </g>
+    </g>
+</svg>
