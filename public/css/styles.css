@@ -45,9 +45,9 @@ header h2 {
     align-items: center;
 }
 
-.social-link:hover {
+/* .social-link:hover {
     background-color: gainsboro;
-}
+} */
 
 .social-image {
     width: 18px;
@@ -130,7 +130,7 @@ header h2 {
 }
 
 footer {
-    background-color: #0a8054;
+    border-top: 1px solid gainsboro;
 }
 
 @media (max-width: 600px) {
@@ -141,9 +141,9 @@ footer {
         align-items: center;
     }
 
-    .form-section {
+    /* .form-section {
         border: 1px solid #0a8054;
-    }
+    } */
 
     #name-section {
         flex: 1;

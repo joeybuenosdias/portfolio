@@ -14,11 +14,6 @@ const social = [
         label: 'Twitter',
         url: 'https://twitter.com/joey_mojocode'
     },
-    {
-        vector: '/images/gmail-thumbnail.svg',
-        label: 'Gmail',
-        url: 'mailto:jschrader@mojocode.io'
-    },
 ]
 
 module.exports = social
