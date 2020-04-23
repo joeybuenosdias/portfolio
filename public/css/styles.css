@@ -1,3 +1,7 @@
+/**
+Green color shades -=> https://color-hex.org/color/0a8054
+*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -168,6 +172,21 @@ header h2 {
 #message::placeholder {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+}
+
+#submit-button {
+    height: 48px;
+    width: 400px;
+    background-color: #0a8054;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#submit-button:hover {
+    background-color: #086643;
+    cursor: pointer;
 }
 
 footer {
