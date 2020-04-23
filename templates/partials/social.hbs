@@ -1,11 +1,16 @@
 <div class="social-wrapper">
-    {{#each socialLinks}}
-        <a href={{this.url}}>
+    {{#each social}}
+        <a
+            href={{this.url}}
+            class="social-link"
+            target="_blank"
+        >
             <img
-                class="social-icon"
+                class="social-image"
                 src={{this.vector}}
+                class="social-image"
             />
-            <p>{{this.label}}</p>
+            <p class="social-label">{{this.label}}</p>
         </a>
     {{/each}}
 </div>

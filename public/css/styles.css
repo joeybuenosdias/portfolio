@@ -30,6 +30,36 @@ header h2 {
     width: 250px;
 }
 
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px 0px 0px;
+}
+
+.social-link {
+    text-decoration: none;
+    margin: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link:hover {
+    background-color: gainsboro;
+}
+
+.social-image {
+    width: 36px;
+    height: 36px;
+    margin: 0px 0px 12px 0px;
+}
+
+.social-label {
+    margin: 0;
+    padding: 0;
+}
+
 .carousel-section {
     padding: 24px 8px;
 }

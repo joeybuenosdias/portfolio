@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const path = require('path')
 
 const PORT = process.env.PORT || 3001
+const social = require('./data/social')
 const projects = require('./data/projects')
 const skills = require('./data/skills')
 
@@ -28,10 +29,11 @@ app.use(express.static(publicPath))
 
 app.use('', (req, res) => {
     fetchGithub.then(repos => {
-        console.log('repos hit', repos)
+        console.log('repos hit', social)
         res.render('index', {
             title: 'Home page',
             name: 'Joey Schrader',
+            social,
             projects,
             skills,
             repos,
@@ -41,6 +43,7 @@ app.use('', (req, res) => {
         res.render('index', {
             title: 'Home page',
             name: 'Joey Schrader',
+            social,
             projects,
             skills,
             repos: staticRepos,
