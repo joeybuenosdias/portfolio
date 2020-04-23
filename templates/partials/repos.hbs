@@ -2,8 +2,8 @@
     <h2 class="carousel-title">Repositories</h2>
     <div class="carousel-content">
         {{#each repos}}
-            <div class="carousel-card">
-                <a target="_blank" href={{this.svn_url}}>{{this.name}}</a>
+            <div class="repos-card">
+                <a target="_blank" href={{this.html_url}}>{{this.name}}</a>
             </div>
         {{/each}}
     </div>
