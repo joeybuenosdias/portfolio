@@ -33,7 +33,7 @@ header h2 {
 .social-wrapper {
     display: flex;
     justify-content: center;
-    padding: 24px 0px 0px 0px;
+    padding: 32px;
 }
 
 .social-link {
@@ -50,14 +50,15 @@ header h2 {
 }
 
 .social-image {
-    width: 36px;
-    height: 36px;
+    width: 18px;
+    height: 18px;
     margin: 0px 0px 12px 0px;
 }
 
 .social-label {
     margin: 0;
     padding: 0;
+    font-size: 12px;
 }
 
 .carousel-section {
@@ -126,6 +127,10 @@ header h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+}
+
+footer {
+    background-color: #0a8054;
 }
 
 /* @media (max-width: 600px) {

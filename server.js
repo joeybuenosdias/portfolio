@@ -29,7 +29,6 @@ app.use(express.static(publicPath))
 
 app.use('', (req, res) => {
     fetchGithub.then(repos => {
-        console.log('repos hit', social)
         res.render('index', {
             title: 'Home page',
             name: 'Joey Schrader',
