@@ -3,7 +3,13 @@
     <div class="carousel-content">
         {{#each repos}}
             <div class="repos-card">
-                <a target="_blank" href={{this.html_url}}>{{this.name}}</a>
+                <a
+                    target="_blank"
+                    href={{this.html_url}}
+                    class="repo-link"
+                >
+                    {{this.name}}
+                </a>
             </div>
         {{/each}}
     </div>
