@@ -7,13 +7,14 @@ const fetchGithub = new Promise((resolve, reject) => {
         },
         url: 'https://api.github.com/users/mojocodeio/repos',
         json: true,
-    }, (err, { body }) => {
+        timeout: 1000,
+    }, (err, res) => {
         if (err) {
             reject(err)
-        } else if (body.message === 'Not Found') {
+        } else if (res.body.message === 'Not Found') {
             reject(err)
         } else {
-            resolve(body)
+            resolve(res.body)
         }
     })
 })
