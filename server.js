@@ -6,7 +6,9 @@ const path = require('path')
 const PORT = process.env.PORT || 3001
 const projects = require('./data/projects')
 const skills = require('./data/skills')
-const repos = require('./data/repos')
+
+/** should be able to remove this */
+const staticRepos = require('./data/repos')
 const fetchGithub = require('./utils/fetchGithub')
 
 const app = express()
@@ -25,14 +27,24 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicPath))
 
 app.use('', (req, res) => {
-    fetchGithub('https://api.github.com/users/mojocodeio/repos')
-
-    res.render('index', {
-        title: 'Home page',
-        name: 'Joey Schrader',
-        projects,
-        skills,
-        repos,
+    fetchGithub.then(repos => {
+        console.log('repos hit', repos)
+        res.render('index', {
+            title: 'Home page',
+            name: 'Joey Schrader',
+            projects,
+            skills,
+            repos,
+        })
+    }).catch(err => {
+        console.log('error hit', err)
+        res.render('index', {
+            title: 'Home page',
+            name: 'Joey Schrader',
+            projects,
+            skills,
+            repos: staticRepos,
+        })
     })
 })
 

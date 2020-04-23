@@ -3,11 +3,7 @@
     <div class="skills-container">
         {{#each repos}}
             <div class="skill-card">
-                <img
-                    class="skill-logo"
-                    src={{this.vector}}
-                />
-                <p class="skill-label">{{this.label}}</p>
+                <a target="_blank" href={{this.svn_url}}>{{this.name}}</a>
             </div>
         {{/each}}
     </div>

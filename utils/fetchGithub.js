@@ -1,19 +1,21 @@
 const request = require('request');
 
-const fetchGithub = (url) => {
+const fetchGithub = new Promise((resolve, reject) => {
     request({
         headers: {
             'User-Agent': 'mojocodeio'
         },
-        url,
+        url: 'https://api.github.com/users/mojocodeio/repos',
         json: true,
     }, (err, { body }) => {
         if (err) {
-            console.log(err)
+            reject(err)
+        } else if (body.message === 'Not Found') {
+            reject(err)
         } else {
-            console.log(body)
+            resolve(body)
         }
     })
-}
+})
 
 module.exports = fetchGithub
