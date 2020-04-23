@@ -30,22 +30,22 @@ header h2 {
     width: 250px;
 }
 
-.skills-section {
+.carousel-section {
     padding: 24px 8px;
 }
 
-.skills-title {
+.carousel-title {
     padding: 0 16px;
     color: #3F3F3F;
 }
 
-.skills-container {
+.carousel-content {
     display: flex;
     overflow-x: scroll;
     width: 100%;
 }
 
-.skill-card {
+.carousel-card {
     align-items: center;
     border-radius: 3px;
     border: 1px solid gainsboro;
@@ -58,13 +58,13 @@ header h2 {
     width: 96px;
 }
 
-.skill-logo {
+.card-logo {
     width: 72px;
     height: 72px;
     margin: 0 24px;
 }
 
-.skill-label {
+.card-label {
     width: 96px;
     font-size: 14px;
     color: gray;

@@ -1,13 +1,13 @@
-<section class="skills-section">
-    <h2 class="skills-title">Skills</h2>
-    <div class="skills-container">
+<section class="carousel-section">
+    <h2 class="carousel-title">Skills</h2>
+    <div class="carousel-content">
         {{#each skills}}
-            <div class="skill-card">
+            <div class="carousel-card">
                 <img
-                    class="skill-logo"
+                    class="card-logo"
                     src={{this.vector}}
                 />
-                <p class="skill-label">{{this.label}}</p>
+                <p class="card-label">{{this.label}}</p>
             </div>
         {{/each}}
     </div>
