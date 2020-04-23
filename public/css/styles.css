@@ -129,35 +129,51 @@ header h2 {
     text-align: center;
 }
 
+.contact-title {
+    padding: 0 24px;
+    color: #3F3F3F;
+}
+
+#contact-form {
+    border: 1px solid gainsboro;
+    padding: 24px 64px;
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-field {
+    width: 100%;
+    display: block;
+    height: 48px;
+    margin: 0 0 24px 0;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 16px;
+    color: #0a8054;
+}
+
+#message {
+    width: 100%;
+    margin: 0 0 24px 0;
+    border: 1px solid gainsboro;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: 16px;
+    color: #0a8054;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#message::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
 footer {
-    border-top: 1px solid gainsboro;
+    /* border-top: 1px solid gainsboro; */
 }
 
 @media (max-width: 600px) {
-    .form-fieldset {
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    /* .form-section {
-        border: 1px solid #0a8054;
-    } */
-
-    #name-section {
-        flex: 1;
-    }
-
-    #email-section {
-        flex: 1;
-    }
-
-    #message-section {
-        flex: 3;
-    }
-
-    #submit-button {
-        flex: 1;
-    }
 }

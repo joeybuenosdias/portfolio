@@ -1,39 +1,31 @@
 <section class="contact-section">
-    <h2 class="carousel-title">Contact Me</h2>
+    <h2 class="contact-title">Contact Me</h2>
     <form action="/contact" id="contact-form" method="post" role="form">
-            <div id="name-section" class="form-section">
-                <label for="name">Name</label>
                 <input
                     id="name"
+                    class="form-field"
                     name="name"
                     type="text"
                     placeholder="Your name"
                     required
                 />
-            </div>
 
-            <div id="email-section" class="form-section">
-                <label for="email">Email</label>
                 <input
                     id="email"
+                    class="form-field"
                     name="email"
                     type="text"
                     placeholder="Your email"
                     required
                 />
-            </div>
 
-            <div id="message-section" class="form-section">
-                <label for="message">Message</label>
                 <textarea
                     id="message"
                     name="message"
-                    placeholder="Enter your message here"
-                    rows="3"
+                    placeholder="Your message"
+                    rows="7d"
                     required
-                >
-                </textarea>
-            </div>
+                ></textarea>
 
             <button id="submit-button" type="submit">Submit</button>
     </form>
