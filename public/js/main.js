@@ -13,7 +13,7 @@ contactForm.addEventListener('submit', (e) => {
     const emailValue = email.value
     const messageValue = message.value
 
-    fetch('http://localhost:3000/contact', {
+    fetch('/contact', {
         method: 'POST',
         body: JSON.stringify({ nameValue, emailValue, messageValue }),
         headers: {
