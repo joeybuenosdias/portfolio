@@ -2,34 +2,33 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const router = express.Router()
 
-const gmailEmailAddress = process.env.GMAIL_EMAIL_ADDRESS
+const gmailTransport = process.env.GMAIL_TRANSPORT_ACCOUNT
 const gmailPassword = process.env.GMAIL_PASSWORD
+const gmailAccount = process.env.GMAIL_MOJO
 
 /** Set up nodemailer transporter */
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: gmailEmailAddress,
+        user: gmailTransport,
         pass: gmailPassword
     }
 });
 
 router.post('/contact', (req, res) => {
-    console.log('Contact route hit')
     const { body } = req;
-    console.log('BODY: ', body)
     const mailOptions = {
-        from: 'sender@email.com', // sender address
-        to: 'jschrader@mojocode.io', // list of receivers
+        from: `${body.emailValue}`, // sender address
+        to: gmailAccount, // list of receivers
         subject: 'Portfolio Inquiry', // Subject line
-        html: '<p>Your html here</p>'// plain text body
+        html: `<section><h1>Sender Email: ${body.emailValue}</h1><h1>Sender Email: ${body.nameValue}</h1><p>${body.messageValue}</p></section>`
       }
 
-      transporter.sendMail(mailOptions, function (err, info) {
+      transporter.sendMail(mailOptions, (err, info) => {
         if(err)
-          console.log(err)
+          res.send(err)
         else
-          console.log(info);
+          res.send(info)
      })
 })
 
