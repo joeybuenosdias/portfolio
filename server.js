@@ -2,8 +2,11 @@ require('dotenv').config();
 const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
+const nodemailer = require('nodemailer')
 
 const PORT = process.env.PORT || 3001
+const gmailEmailAddress = process.env.GMAIL_EMAIL_ADDRESS
+const gmailPassword = process.env.GMAIL_PASSWORD
 const social = require('./data/social')
 const projects = require('./data/projects')
 const skills = require('./data/skills')
@@ -18,6 +21,15 @@ const app = express()
 const publicPath = path.join(__dirname, './public')
 const viewsPath = path.join(__dirname, './templates/views')
 const partialsPath = path.join(__dirname, './templates/partials')
+
+/** Set up nodemailer transporter */
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: gmailEmailAddress,
+        pass: gmailPassword
+    }
+});
 
 /** Set handlebars as view engine */
 app.set('view engine', 'hbs')
@@ -38,7 +50,6 @@ app.use('', (req, res) => {
             repos,
         })
     }).catch(err => {
-        console.log('error hit', err)
         res.render('index', {
             title: 'Home page',
             name: 'Joey Schrader',
@@ -50,11 +61,21 @@ app.use('', (req, res) => {
     })
 })
 
-app.use('/blog', (req, res) => {
+app.post('/contact', (req, res) => {
+    console.log('Contact route hit')
+    const mailOptions = {
+        from: 'sender@email.com', // sender address
+        to: 'jschrader@mojocode.io', // list of receivers
+        subject: 'Portfolio Inquiry', // Subject line
+        html: '<p>Your html here</p>'// plain text body
+      };
 
-})
-
-app.use('/blog/:title', (req, res) => {
+      transporter.sendMail(mailOptions, function (err, info) {
+        if(err)
+          console.log(err)
+        else
+          console.log(info);
+     });
 
 })
 
