@@ -47,11 +47,12 @@ header h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: gray;
 }
 
-/* .social-link:hover {
-    background-color: gainsboro;
-} */
+.social-link:visited {
+    color: gray;
+}
 
 .social-image {
     width: 18px;
@@ -189,10 +190,8 @@ header h2 {
     cursor: pointer;
 }
 
-footer {
-    /* border-top: 1px solid gainsboro; */
-}
-
 @media (max-width: 600px) {
-
+    #submit-button {
+        width: 100%;
+    }
 }
