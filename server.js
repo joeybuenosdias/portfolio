@@ -3,6 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
 const nodemailer = require('nodemailer')
+const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 3001
 const gmailEmailAddress = process.env.GMAIL_EMAIL_ADDRESS
@@ -37,9 +38,33 @@ app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
 /** Use static assets */
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 app.use(express.static(publicPath))
 
-app.use('', (req, res) => {
+app.post('/contact', (req, res) => {
+    console.log('Contact route hit')
+    const { body } = req;
+    console.log('BODY: ', body)
+    const mailOptions = {
+        from: 'sender@email.com', // sender address
+        to: 'jschrader@mojocode.io', // list of receivers
+        subject: 'Portfolio Inquiry', // Subject line
+        html: '<p>Your html here</p>'// plain text body
+      };
+
+      transporter.sendMail(mailOptions, function (err, info) {
+        if(err)
+          console.log(err)
+        else
+          console.log(info);
+     });
+
+})
+
+app.get('', (req, res) => {
     fetchGithub.then(repos => {
         res.render('index', {
             title: 'Home page',
@@ -59,24 +84,6 @@ app.use('', (req, res) => {
             repos: staticRepos,
         })
     })
-})
-
-app.post('/contact', (req, res) => {
-    console.log('Contact route hit')
-    const mailOptions = {
-        from: 'sender@email.com', // sender address
-        to: 'jschrader@mojocode.io', // list of receivers
-        subject: 'Portfolio Inquiry', // Subject line
-        html: '<p>Your html here</p>'// plain text body
-      };
-
-      transporter.sendMail(mailOptions, function (err, info) {
-        if(err)
-          console.log(err)
-        else
-          console.log(info);
-     });
-
 })
 
 app.listen(PORT, () => {
