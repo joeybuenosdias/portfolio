@@ -5,16 +5,18 @@ const path = require('path')
 const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 3001
+
+/** data */
 const social = require('./data/social')
 const projects = require('./data/projects')
 const skills = require('./data/skills')
+const staticRepos = require('./data/repos')
+
+/** utils */
+const fetchGithub = require('./utils/fetchGithub')
 
 /** Route Variables */
 const contactRoute = require('./routes/contact')
-
-/** should be able to remove this */
-const staticRepos = require('./data/repos')
-const fetchGithub = require('./utils/fetchGithub')
 
 const app = express()
 
