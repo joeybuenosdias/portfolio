@@ -94,6 +94,15 @@ header h2 {
     width: 96px;
 }
 
+.carousel-card:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
 .repos-card {
     align-items: center;
     border-radius: 3px;
@@ -117,7 +126,6 @@ header h2 {
     text-decoration: none;
 }
 
-
 .card-logo {
     width: 72px;
     height: 72px;
@@ -132,6 +140,7 @@ header h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    text-decoration: none;
 }
 
 .contact-title {
