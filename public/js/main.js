@@ -1,6 +1,3 @@
-console.log('You have discovered a secret client side message')
-console.log('Please call 1-800-555-1234 to claim your prize')
-
 const contactForm = document.getElementById('contact-form')
 const name = document.getElementById('name')
 const email = document.getElementById('email')
