@@ -63,6 +63,10 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/blog', (req, res) => {
+    res.render('blog')
+})
+
 app.listen(PORT, () => {
     console.log('listening on port ' + PORT)
 })
