@@ -158,25 +158,26 @@ header h2 {
 }
 
 .form-field {
-    width: 100%;
+    border: 1px solid #0a8054;
+    color: #0a8054;
     display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
     height: 48px;
     margin: 0 0 24px 0;
-    font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
     padding-left: 16px;
-    color: #0a8054;
+    width: 100%;
 }
 
 #message {
-    width: 100%;
-    margin: 0 0 24px 0;
-    border: 1px solid gainsboro;
-    padding-top: 16px;
-    padding-left: 16px;
-    font-size: 16px;
+    border: 1px solid #0a8054;
     color: #0a8054;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 0 24px 0;
+    padding-left: 16px;
+    padding-top: 16px;
+    width: 100%;
 }
 
 #message::placeholder {
