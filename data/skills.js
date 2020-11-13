@@ -15,6 +15,11 @@ const skills = [
         url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     },
     {
+        vector: '/images/next-thumbnail.svg',
+        label: 'Next',
+        url: 'https://nextjs.org/docs',
+    },
+    {
         vector: '/images/css-thumbnail.svg',
         label: 'CSS 3',
         url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
