@@ -5,6 +5,11 @@ const projects = [
         url: 'https://www.overstock.com/',
     },
     {
+        vector: '/images/harvest.svg',
+        label: 'Food Dude',
+        url: 'https://fooddude.vercel.app/',
+    },
+    {
         vector: '/images/dpl-thumbnail.svg',
         label: 'DevPoint Labs',
         url: 'https://www.devpointlabs.com/',
