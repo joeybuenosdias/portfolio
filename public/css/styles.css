@@ -1,5 +1,5 @@
 /**
-Green color shades -=> https://color-hex.org/color/0a8054
+Active Color Pallette -> https://colorhunt.co/palette/167893
 */
 
 body {
@@ -17,8 +17,8 @@ body {
 
 header {
     align-items: center;
-    background-color: #0a8054;
-    color: white;
+    background-color: #1b262c;
+    color: #bbe1fa;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,10 +27,10 @@ header {
 
 header h2 {
     margin: 0;
+    color: #3282b8;
 }
 
 .joey-avatar {
-    height: 250px;
     width: 250px;
 }
 
