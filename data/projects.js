@@ -22,7 +22,7 @@ const projects = [
     {
         vector: '/images/devictory-thumbnail.svg',
         label: 'Victory',
-        url: 'https://www.devspeedagility.com/',
+        url: 'https://www.victorybrandv.com/',
     },
     {
         vector: '/images/woodcraft-thumbnail.svg',
