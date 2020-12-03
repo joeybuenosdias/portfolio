@@ -3,12 +3,17 @@
     "name": "Joey Schrader Portfolio",
     "version": 1.0,
     "description": "Joey Schrader's Front End Development Portfolio",
-    "background_color": "#1b262c",
-    "start_url": "https://www.joeyschrader.com",
+    "start_url": "/",
+    "display": "standalone",
     "icons": [
         {
-            "src": "images/javascript144.png",
-            "sizes": "144x144",
+            "src": "images/bluej192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/bluej512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]
