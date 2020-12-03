@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
     min-height: 100vh;
 }
 
@@ -32,6 +32,38 @@ header h2 {
 
 .joey-avatar {
     width: 250px;
+}
+
+.banner {
+    background-color: #0f4c75;
+    text-align: center;
+    padding: 32px;
+}
+
+.banner h2 {
+    color: #bbe1fa;
+}
+
+.banner a {
+    text-decoration: none;
+    color: #bbe1fa;
+    padding: 16px 32px;
+    display: inline-block;
+    border: 1px solid #3282b8;
+    margin-bottom: 16px;
+}
+
+.banner a:hover {
+    background-color: #3282b8;
+}
+
+.banner p {
+    margin: 0 auto;
+    width: 75%;
+    color: #bbe1fa;
+    text-align: left;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 .social-wrapper {
@@ -202,6 +234,11 @@ header h2 {
 
 @media (max-width: 600px) {
     #submit-button {
+        width: 100%;
+    }
+
+    .banner p {
+        margin: 0 auto;
         width: 100%;
     }
 }
