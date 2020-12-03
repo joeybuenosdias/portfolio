@@ -1,0 +1,14 @@
+{
+    "manifest_version": 1,
+    "name": "Joey Schrader Portfolio",
+    "version": 1.0,
+    "description": "Joey Schrader's Front End Development Portfolio",
+    "background_color": "#1b262c",
+    "icons": [
+        {
+            "src": "images/javascript144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}
