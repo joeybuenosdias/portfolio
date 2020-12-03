@@ -4,6 +4,7 @@
     "version": 1.0,
     "description": "Joey Schrader's Front End Development Portfolio",
     "background_color": "#1b262c",
+    "start_url": "https://www.joeyschrader.com",
     "icons": [
         {
             "src": "images/javascript144.png",
